@@ -1,0 +1,31 @@
+{
+    "name": "timedoor/whatsapp-otp",
+    "description": "Whatsapp OTP package for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Timedoor\\WhatsappOtp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nadia Taradhita",
+            "email": "taradhita@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4|^8.0|^8.1",
+        "timedoor/tmd-membership": "^1.1",
+        "netflie/whatsapp-cloud-api": "^1.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Timedoor\\WhatsappOtp\\WhatsappOtpServiceProvider"
+            ]
+        }
+    },
+    "prefer-stable": true
+}
